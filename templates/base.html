@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{{title}}</title>
+        <style>
+            .title {
+                text-align: center;
+                text-decoration: underline;
+                font-size: 40px;
+                font-style: Italic;
+                
+            }
+            textarea {
+                margin: 10px 0;
+                width: 200px;
+                height: 120px;
+            }
+            .header{
+                font-size: 20px;
+                text-align: Justify;
+                text-indent: 60px;
+            }
+        </style>
+    </head>
+<body>
+   
+    <div class="container">
+
+        <nav class="header">
+
+            <h1 class="title"><a href="/blog">Build a Blog</a></h1>
+            <a  href="/blog" class="right">Main Blog Page</a> 
+        
+            <a  href="/newpost" class="left">Add a New Post</a>
+            
+           
+        </nav>
+        {% block Content %}
+        {% endblock %}
+    </div>
+</body>
+</html>
